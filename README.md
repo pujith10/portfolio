@@ -1,73 +1,70 @@
-# React + TypeScript + Vite
+# 🚀 Karri Pujith Sri Sai – AI/ML Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio website showcasing my projects, technical skills, and research interests in Artificial Intelligence and Machine Learning.
 
-Currently, two official plugins are available:
+🌐 **Live Website:**  
+👉 https://portfolio-indol-two-39.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 📌 About This Project
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This is a modern, responsive portfolio website built using:
 
-## Expanding the ESLint configuration
+- ⚛️ React
+- 🟦 TypeScript
+- ⚡ Vite
+- 🎨 Tailwind CSS
+- 📄 Google Sheets (as contact form backend)
+- ☁️ Deployed on Vercel
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+The website highlights my AI/ML projects, technical expertise, and provides a fully functional contact form integrated with Google Sheets via Google Apps Script.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## ✨ Features
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- 🔥 Clean and modern UI
+- 📱 Fully responsive design
+- 🎭 Smooth animations and transitions
+- 📬 Contact form with Google Sheets backend
+- ⚡ Fast performance with Vite
+- 🚀 Automatic deployment via Vercel
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🛠️ Tech Stack
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+| Technology | Purpose |
+|------------|----------|
+| React | Frontend UI Library |
+| TypeScript | Type Safety |
+| Vite | Fast Development & Build Tool |
+| Tailwind CSS | Styling |
+| Google Apps Script | Serverless Backend |
+| Google Sheets | Data Storage |
+| Vercel | Hosting & Deployment |
+
+---
+
+## 📬 Contact Form Backend
+
+The contact form uses:
+
+- Google Apps Script deployed as a Web App
+- Data stored directly into Google Sheets
+- No traditional backend server required
+
+Architecture:
+
+User → Vercel Frontend → Google Apps Script → Google Sheet
+
+---
+
+## 🚀 Getting Started (Local Setup)
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/portfolio.git
+cd portfolio
